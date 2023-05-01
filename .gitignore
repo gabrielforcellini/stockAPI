@@ -1,0 +1,27 @@
+# Dependências instaladas pelo npm
+/node_modules
+
+# Arquivos gerados pelo TypeScript
+/dist
+
+# Arquivos de log
+/*.log
+
+# Arquivos de backup
+*.bak
+
+# Arquivos de configuração local
+.env
+
+# Arquivos de cache do VS Code
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+/.vscode
+
+# Outros arquivos e diretórios
+node_modules/
+coverage/
+temp/
+*.db
