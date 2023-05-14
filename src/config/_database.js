@@ -2,9 +2,9 @@ import pg from 'pg';
 
 const client = new pg.Client({
   user: 'postgres',
-  database: 'postgres',
+  database: 'estoque',
   host: 'localhost',
-  password: 'postgres',
+  password: 'admin',
   port: 5432,
 })
 
