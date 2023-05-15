@@ -1,16 +1,12 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import db from 'orm';
 
-@Entity()
-export class User {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column()
-  name: string;
-
-  @Column()
-  email: string;
-
-  @Column()
-  password: string;
-}
+export const User = db.define('person', {
+  name    : String,
+  surname : String
+}, {
+  methods: {
+      fullName: function () {
+          return this.name + ' ' + this.surname;
+      }
+  }
+});
