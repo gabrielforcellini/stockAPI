@@ -42,8 +42,6 @@ export class UserController {
         complemento,
         ativo
         } = req.body;
-      
-      
     };
   }
 
